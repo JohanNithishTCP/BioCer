@@ -1,12 +1,12 @@
-import Header from "./components/Header";
-import Banner from "./components/Banner";
-import About from "./components/About";
-import Services from "./components/Services";
-import AnimatedVideo from "./components/AnimatedVideo";
-import ProductPortfolio from "./components/ProductPortfolio";
-import Insights from "./components/Insights";
-import TradeFair from "./components/TradeFair";
-import Footer from "./components/Footer";
+import Header from "./_components/Header";
+import Banner from "./_components/Banner";
+import About from "./_components/About";
+import Services from "./_components/Services";
+import AnimatedVideo from "./_components/AnimatedVideo";
+import ProductPortfolio from "./_components/ProductPortfolio";
+import Insights from "./_components/Insights";
+import TradeFair from "./_components/TradeFair";
+import Footer from "./_components/Footer";
 
 export default function Home() {
   return (

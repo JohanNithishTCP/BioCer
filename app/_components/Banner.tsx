@@ -3,10 +3,8 @@ import { useState } from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
 const bannerVideos = [
-    "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_01.webm",
-    "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_02.webm",
-    "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_03.webm",
-    "https://cdn.clinicalvisuals.com/siteImages/bytech/bytec_04.webm",
+    "https://cdn.clinicalvisuals.com/medical/biocer_new/landing_page/biocer_01.webm",
+    "https://cdn.clinicalvisuals.com/medical/biocer_new/landing_page/biocer_02.webm"
 ];
 
 export default function Banner() {

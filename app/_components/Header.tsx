@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +35,7 @@ export default function Header() {
 
     return (
         <>
-            <header className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 lg:px-12 transition-all duration-300 z-[100] ${isScrolled ? 'py-4 bg-white/95 backdrop-blur-sm shadow-md' : 'py-6 bg-white'}`}>
+            <header className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 lg:px-12 transition-all duration-300 z-[100] ${isScrolled ? 'py-4 bg-white/95 backdrop-blur-sm shadow-md' : 'py-5 bg-white'}`}>
                 {/* Logo */}
                 <div className="flex items-center gap-3">
                     <img src={`/logo.png`} width={150} alt="BioCer Logo" className="h-auto transition-all duration-300" />
@@ -73,9 +74,9 @@ export default function Header() {
                 <div className="xl:hidden flex items-center">
                     <button onClick={toggleMenu} className="text-gray-700">
                         {isMenuOpen ? (
-                            <span className="text-2xl font-light">✕</span>
+                            <X size={28} />
                         ) : (
-                            <img src={`/home/vector.svg`} width={`25px`} alt='BioCer' />
+                            <Menu size={28} />
                         )}
                     </button>
                 </div>
@@ -120,7 +121,7 @@ export default function Header() {
             </div>
 
             {/* Spacer to prevent content from jumping under fixed header */}
-            <div className="h-[96px]" />
+            <div className="h-[86px]" />
         </>
     );
 }
