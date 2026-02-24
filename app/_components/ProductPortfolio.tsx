@@ -23,29 +23,29 @@ export default function ProductPortfolio() {
     ];
 
     return (
-        <section className="px-4 lg:px-8 py-8 mb-16">
-            <div className="bg-[#f5f5f5] rounded-[2rem] p-8 lg:p-14 max-w-[1400px] mx-auto">
+        <section className="site-container py-8 mb-16">
+            <div className="bg-[#f5f5f5] rounded-[2rem] p-8 lg:p-14 mx-auto">
 
                 {/* Top Header */}
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-10">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-10" data-aos="fade-up">
                     <div className="max-w-xl">
                         <div className="flex items-center gap-2 mb-4">
                             <img src={`/home/vector.svg`} width={`25px`} alt='BioCer' />
-                            <span className="text-gray-500 font-medium text-sm">Projects</span>
+                            <span className="text-gray-500 font-medium text-[16px]">Projects</span>
                         </div>
-                        <h2 className="text-3xl lg:text-[2.25rem] font-medium text-gray-800 leading-tight">
-                            Our product portfolio
+                        <h2 className="section-title">
+                            Our Product Portfolio
                         </h2>
                     </div>
-                    <div className="max-w-sm">
-                        <p className="text-gray-500 text-[13px] leading-relaxed">
+                    <div className="max-w-lg">
+                        <p className="section-desc">
                             We focus on three central topics: haemostasis, surgical meshes as soft tissue replacement and the functionalisation of implant surfaces using modern coating technologies.
                         </p>
                     </div>
                 </div>
 
                 {/* Portfolio Swiper */}
-                <div className="mb-8">
+                <div className="mb-8" data-aos="fade-up">
                     <Swiper
                         modules={[Pagination]}
                         spaceBetween={24}
@@ -65,7 +65,7 @@ export default function ProductPortfolio() {
                     >
                         {portfolioData.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <div className="relative h-[300px] lg:h-[400px] rounded-[2rem] overflow-hidden group cursor-pointer w-full">
+                                <div className="relative aspect-[4/2.3] rounded-[2rem] overflow-hidden group cursor-pointer w-full">
                                     <div
                                         className="absolute inset-0 bg-slate-300 bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105"
                                         style={{ backgroundImage: `url('${item.bgImage}')` }}

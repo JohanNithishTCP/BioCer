@@ -3,9 +3,11 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #8CC63F; /* Common green theme color */
+  --primary: #8ABD24;
+  /* Common green theme color */
   --primary-hover: #7ab332;
-  --section-bg: #f5f6f6; /* Services section background */
+  --section-bg: #f5f6f6;
+  /* Services section background */
   --text-muted: #6b7280;
 }
 
@@ -16,8 +18,7 @@
   --color-primary-hover: var(--primary-hover);
   --color-section-bg: var(--section-bg);
   --color-text-muted: var(--text-muted);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-sora);
 }
 
 body {
@@ -25,4 +26,18 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+}
+
+@layer components {
+  .site-container {
+    @apply px-4 lg:px-15 mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl lg:text-[2.25rem] font-medium text-gray-800 leading-tight;
+  }
+
+  .section-desc {
+    @apply text-gray-500 text-[16px] leading-relaxed;
+  }
 }

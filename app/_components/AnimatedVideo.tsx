@@ -6,29 +6,30 @@ export default function AnimatedVideo() {
     const [isStarted, setIsStarted] = useState(false);
 
     return (
-        <section className="px-4 lg:px-8 py-8 mb-16 max-w-[1400px] mx-auto">
+        <section className="site-container py-8 mb-16">
             {/* Top Header */}
-            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-10">
-                <div className="max-w-xl">
+            <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-10" data-aos="fade-up">
+                <div className="max-w-2xl">
                     <div className="flex items-center gap-2 mb-4">
                         <img src={`/home/vector.svg`} width={`25px`} alt='BioCer' />
-                        <span className="text-gray-500 font-medium text-sm">BioCer-Highlights</span>
+                        <span className="text-gray-500 font-medium text-[16px]">BioCer-Highlights</span>
                     </div>
-                    <h2 className="text-3xl lg:text-[2.25rem] font-medium text-gray-800 leading-tight">
+                    <h2 className="section-title">
                         Animated Video: HaemoCer™ PLUS
                     </h2>
                 </div>
                 <div className="max-w-sm">
-                    <p className="text-gray-500 text-[13px] leading-relaxed">
-                        This video explains in a vivid way the effect of our haemostatis powder.
+                    <p className="section-desc">
+                        This video explains in a vivid way the effect of our haemostatic powder.
                     </p>
                 </div>
             </div>
 
             {/* Video Container */}
             <div
-                className="relative w-full aspect-video md:h-[600px] rounded-[2rem] overflow-hidden bg-slate-200 shadow-sm cursor-pointer group"
+                className="relative w-full aspect-video md:h-[calc(100vh-23vh)] rounded-[2rem] overflow-hidden bg-slate-200 shadow-sm cursor-pointer group"
                 onClick={() => setIsStarted(true)}
+                data-aos="zoom-in"
             >
                 {!isStarted ? (
                     <div className="absolute inset-0 z-10 flex items-center justify-center">

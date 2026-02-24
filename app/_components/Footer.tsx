@@ -3,11 +3,11 @@ import Link from 'next/link';
 
 export default function Footer() {
     return (
-        <footer className="p-4 lg:p-8 mx-auto">
-            <div className="bg-[#8CC63F] rounded-[2rem] p-8 lg:p-14 pb-6! text-white overflow-hidden">
+        <footer className="site-container pb-10">
+            <div className="bg-[#8ABD24] rounded-[2rem] p-8 lg:p-14 pt-9! pb-3! text-white overflow-hidden">
 
                 {/* Top Row: Title & Newsletter */}
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-16">
+                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 mb-5">
                     <h2 className="text-2xl lg:text-3xl font-medium leading-tight max-w-md">
                         Our latest insights on <br /> plastic surgery & skincare
                     </h2>
@@ -27,18 +27,18 @@ export default function Footer() {
                 </div>
 
                 {/* Sub-Separator Line */}
-                <div className="w-full h-px bg-white/20 mb-12" />
+                <div className="w-full h-px bg-white/20 mb-6" />
 
                 {/* Main Content Section */}
                 <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
 
                     {/* Left: Brand & Social */}
-                    <div className="flex flex-col gap-6 lg:w-[30%]">
+                    <div className="flex flex-col gap-2 lg:w-[30%]">
                         <img src="/logo-white.png" width={160} alt="BioCer Logo" />
-                        <p className="text-white/90 text-sm leading-relaxed max-w-[280px]">
+                        <p className="text-white/90 text-[16px] leading-relaxed max-w-[280px]">
                             Transforming beauty with expert care and personalized treatments.
                         </p>
-                        <div className="flex items-center gap-4">
+                        <div className="flex items-center gap-4 lg:mt-4">
                             <a href="#" className="hover:opacity-80 transition-opacity"><Youtube className="w-5 h-5" /></a>
                             <a href="#" className="hover:opacity-80 transition-opacity"><Linkedin className="w-4.5 h-4.5" /></a>
                             <a href="#" className="hover:opacity-80 transition-opacity"><Instagram className="w-5 h-5" /></a>
@@ -49,9 +49,9 @@ export default function Footer() {
                     {/* Right: Quick Links & Info */}
                     <div className="flex-1 flex flex-col gap-10">
                         {/* Quick Links */}
-                        <div>
-                            <h3 className="text-white/90 font-medium mb-4 text-sm">Quick Links</h3>
-                            <nav className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-medium border-b border-white/20 pb-8">
+                        <div className="border-b border-white/20">
+                            <h3 className="text-white font-bold mb-2 text-lg">Quick Links</h3>
+                            <nav className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-medium pb-5">
                                 <Link href="#" className="font-bold hover:text-white/80 transition-colors">Home</Link>
                                 <Link href="#" className="hover:text-white/80 transition-colors">Haemostasis</Link>
                                 <Link href="#" className="hover:text-white/80 transition-colors">Coating</Link>
@@ -61,6 +61,17 @@ export default function Footer() {
                                 <Link href="#" className="hover:text-white/80 transition-colors">Research Partner</Link>
                                 <Link href="#" className="hover:text-white/80 transition-colors">Download Area</Link>
                             </nav>
+                            <h3 className="text-white font-bold mb-2 text-lg">Company</h3>
+                            <nav className="flex flex-wrap items-center gap-x-8 gap-y-3 text-sm font-medium pb-5">
+                                <Link href="#" className="font-bold hover:text-white/80 transition-colors">Contact</Link>
+                                <Link href="#" className="hover:text-white/80 transition-colors">Site Notice</Link>
+                                <Link href="#" className="hover:text-white/80 transition-colors">Privacy Policy</Link>
+                                <Link href="#" className="hover:text-white/80 transition-colors">GTC</Link>
+                                <Link href="#" className="hover:text-white/80 transition-colors">Client Module Online Presentation</Link>
+                                <Link href="#" className="hover:text-white/80 transition-colors">Remote Management</Link>
+                            </nav>
+
+
                         </div>
 
                         {/* Info Grid: Contact, Email, Address */}
@@ -102,7 +113,7 @@ export default function Footer() {
                 </div>
 
                 {/* Bottom Row */}
-                <div className="mt-16 pt-6 border-t border-white/20 text-center">
+                <div className="mt-6 pt-3 border-t border-white/20 text-center">
                     <p className="text-xs font-medium text-white/90">
                         © 2026 BioCer Entwicklungs-GmbH
                     </p>
